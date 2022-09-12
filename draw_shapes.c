@@ -37,10 +37,10 @@ void print_arrow(int leftCol, int size)
   }
   
   int i, j;
-  int endCol = leftCol + size;
+  int endCol = leftCol + (size - 2);
   for (int row = 0; row < size; row++){
     int col;
-    for (col = 0; col < leftCol; col++) putchar('     ');
+    for (col = 0; col < leftCol; col++) putchar('  ');
     for (       ; col < endCol;  col++) putchar('*');
     putchar('\n');
   }
